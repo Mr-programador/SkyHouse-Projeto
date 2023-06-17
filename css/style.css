@@ -9,7 +9,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url("/img/dia.png");
+    background-color: #ffffff80;
     background-size: cover;
     background-position: center;
     font-size: 18pt;
@@ -24,7 +24,7 @@ body {
   }
   
   .header {
-    background-image: url("/img/ceu.jpg");
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     color: #14080E;
