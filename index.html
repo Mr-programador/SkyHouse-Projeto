@@ -26,28 +26,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <title>Sky House</title>
 </head>
-<body>
+<body onload="carregar()">
     <header class="header">
-        <ul class="menu">
-            <li class="item">
-                <a href="#">Chaves</a>
-            </li>
-
-            <li class="item">
-                <a href="#">Redes Socias</a>
-            </li>
-
-            <li class="item">
-                <a href="#">Quem somos</a>
-            </li>
-
-            <li class="item">
-                <a href="#">Conhecer</a>
-            </li>
-        </ul>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Chama Church</a></li>
+                <li><a href="#">Redes Sociais</a></li>
+                <li><a href="#">Proposito</a></li>
+                <li><a href="#">Quem Somos?</a></li>
+            </ul>
+        </nav>
     </header>
 
-HTML e CSS</br>
+    <main class="main">
+        <div class="container">
+            <h1>SKY HOUSE</h1>
+            <p>Transformação & Comunhão</p>
+        </div>
+        <div class="portaChaves">
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-Salvação" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span><a href="./chave-salvacao.html">Salvação</a></span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-Amor" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Amor</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Oração</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+
+            <div class="chaves">
+                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
+                <span>Salvação</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3>&copy; Chama Church</h3>
+        <p>Minha igreja e minha família.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+<!--HTML e CSS</br>
 -Redes Sociais- (pequena aba com as redes socias)</br>
 -Quem somos?-   (direcionamento a igreja se houver, se não tbm um breve texto.)</br>
 -Conhecer-      (google maps, mostrando a localização da igreja.)</br>
@@ -70,7 +137,6 @@ Todas as 12 chaves, so clicar</br>
 Javascript</br>
 </br>
 -O background vai mudar de acordo com a hora de acesso.</br>
+-->
 
-    <script src="./js/script.js"></script>
-</body>
-</html>
+    
