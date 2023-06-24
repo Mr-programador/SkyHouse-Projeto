@@ -45,6 +45,7 @@ body {
 .menu li a {
   display: block;
   color: #333;
+  font-size: 0.8em;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -60,7 +61,7 @@ body {
 }
 
 .container h1 {
-  font-size: 48px;
+  font-size: 46px;
   color: #333;
 }
 
@@ -83,7 +84,7 @@ body {
 }
 
 .chaves img {
-  width: 150px;
+  width: 100px;
 }
 
 .chaves span {
