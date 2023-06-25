@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,34 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16"  href="./img/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32"  href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
-    <link rel="icon" type="image/png" sizes="96x96"  href="./img/favicons/apple-touch-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/apple-touch-icon-96x96.png">
     <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
     <title>Sky House</title>
 </head>
+
 <body onload="carregar()">
     <header class="header">
+        <img class="logo" src="./img/logo_chama-church_100px.png" alt="Chama Church">
         <nav class="menu">
             <ul>
-                <li><a href="#">Chama Church</a></li>
                 <li><a href="#">Redes Sociais</a></li>
-                <li><a href="#">Proposito</a></li>
+                <li><a href="#">Propósito</a></li>
                 <li><a href="#">Quem Somos?</a></li>
             </ul>
         </nav>
@@ -44,66 +48,102 @@
             <p>Transformação & Comunhão</p>
         </div>
         <div class="portaChaves">
+          <div class="chaves">
+            <img src="./img/chave-white.png" alt="Chave-Salvação" class="rotating-image"
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-bluelight.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="redirecionar('./chave-1-salvacao.html');">
+            <span class="texto">Salvação</span>
+          </div>
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-Salvação" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span><a href="./chave-1-salvacao.html">Salvação</a></span>
+              <img src="./img/chave-white.png" alt="Chave-Amor" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-2-amor.html');">
+              <span class="texto">Amor</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-Amor" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Amor</span>
+              <img src="./img/chave-white.png" alt="Chave-Oração" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-yellow.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-3-oracao.html');">
+              <span class="texto">Oração</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Oração</span>
+              <img src="./img/chave-white.png" alt="Chave-Liberdade" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-green.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-4-liberdade.html');">
+              <span class="texto">Liberdade</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Liberdade</span>
+              <img src="./img/chave-white.png" alt="Chave-Provisão" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-red.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-5-provisao.html');">
+              <span class="texto">Provisão</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Provisão</span>
+              <img src="./img/chave-white.png" alt="Chave-Perdão" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-purple.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-6-perdao.html');">
+              <span class="texto">Perdão</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Perdão</span>
+              <img src="./img/chave-white.png" alt="Chave-Comunhão" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-orange.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-7-comunhao.html');">
+              <span class="texto">Comunhão</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Comunhão</span>
+              <img src="./img/chave-white.png" alt="Chave-Gratidão" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-blue.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-8-gratidao.html');">
+              <span class="texto">Gratidão</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Gratidão</span>
+              <img src="./img/chave-white.png" alt="Chave-Confiança" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-violet.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-9-confianca.html');">
+              <span class="texto">Confiança</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Confiança</span>
+              <img src="./img/chave-white.png" alt="Chave-Serviço" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-vino.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-10-servico.html');">
+              <span class="texto">Serviço</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Serviço</span>
+              <img src="./img/chave-white.png" alt="Chave-Evangelismo" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-grey.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-11-evangelismo.html');">
+              <span class="texto">Evangelismo</span>
             </div>
-
+          
             <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Evangelismo</span>
+              <img src="./img/chave-white.png" alt="Chave-Propósito" class="rotating-image"
+                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-darkgreen.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+                onclick="redirecionar('./chave-12-proposito.html');">
+              <span class="texto">Propósito</span>
             </div>
-
-            <div class="chaves">
-                <img src="./img/chave-white.png" alt="Chave-1" class="rotating-image" onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png');" onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png');">
-                <span>Propósito</span>
-            </div>
-        </div>
+          </div>
     </main>
 
     <footer class="footer">
@@ -112,6 +152,7 @@
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
 
 <!--HTML e CSS</br>
@@ -138,5 +179,3 @@ Javascript</br>
 </br>
 -O background vai mudar de acordo com a hora de acesso.</br>
 -->
-
-    
