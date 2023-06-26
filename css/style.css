@@ -11,7 +11,7 @@ body {
   background-color: #ffffff80;
   background-size: cover;
   background-position: center;
-  font-size: 14pt; /* Estilos para telas pequenas */
+  font-size: 14pt;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +24,14 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
 }
 
 .logo {
-  width: 50px; /* Estilos para telas pequenas */
-  margin-left: 10px; /* Estilos para telas pequenas */
+  width: 50px;
   padding: 10px;
 }
 
@@ -41,15 +40,13 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 20px;
 }
 
 .menu li a {
   display: block;
   color: #333;
-  font-size: 1.0em; /* Estilos para telas pequenas */
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 10px;
   text-decoration: none;
   border-radius: 10px;
 }
@@ -57,12 +54,11 @@ body {
 .menu li a:hover {
   background-color: #ddd;
   border-radius: 10px;
-  color: #333; /* Estilos para telas médias */
+  color: #333;
 }
 
 .main {
   text-align: center;
-  padding: 20px;
   flex-grow: 1;
 }
 
@@ -72,6 +68,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
   flex-grow: 1;
 }
 
@@ -150,10 +147,6 @@ body {
     align-items: center;
   }
 
-  .header ul{
-    height: 30px;
-  }
-
   .logo {
     width: 40px;
   }
@@ -193,7 +186,7 @@ body {
 }
 
 /* Estilos para telas pequenas */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   body {
     font-size: 14pt;
   }
@@ -203,8 +196,7 @@ body {
   }
 
   .logo {
-    width: 20px;
-    margin-left: 10px;
+    width: 30px;
   }
 
   .menu li a:hover {
