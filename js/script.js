@@ -2,15 +2,19 @@ function carregar() {
   var data = new Date();
   var hora = data.getHours();
   var min = data.getMinutes();
-  if (hora >= 0 && hora < 12) {
+
     // Acesso diurno
-    document.body.style.background = 'url(./img/nuvens-dia.png)';
-  } else if (hora >= 12 && hora <= 18) {
+  if (hora >= 6 && hora < 12) {
+    document.body.style.background = '#fff';
     // Acesso vespertino
-    document.body.style.background = 'url(./img/nuvens-tarde.png)';
-  } else {
+  } else if (hora >= 12 && hora < 18) {
+    document.body.style.background = '#fff';
     // Acesso noturno
-    document.body.style.background = 'url(./img/nuvens-noite.png)';
+  } else if (hora >= 18 && hora < 2) {
+    document.body.style.background = '#fff';
+    // Acesso madrugada
+  } else{
+    document.body.style.background = '#fff';
   }
   document.body.style.backgroundSize = 'cover';
 }
