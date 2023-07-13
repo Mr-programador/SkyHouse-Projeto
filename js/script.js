@@ -88,9 +88,15 @@ function redirecionar(url) {
 
 let buttonToggle = document.querySelector('.modo-escuro');
 let body = document.body;
+let classStyle = 'modo-escuro';
 
+buttonToggle.addEventListener('click', function(){
+  body.classList.toggle(classStyle);
+});
+
+/*Forma Maior 
 buttonToggle.addEventListener('click', function(){
   body.classList.contains('modo-escuro')
   ? body.classList.remove('modo-escuro')
   : body.classList.add('modo-escuro')
-});
+}); */
