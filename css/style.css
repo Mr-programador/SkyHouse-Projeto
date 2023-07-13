@@ -8,7 +8,7 @@ font-family: 'Roboto Condensed', sans-serif;
 */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff80;
+  background-color: #fff;
   background-size: cover;
   background-position: center;
   font-size: 14pt;
@@ -26,13 +26,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
+  padding: 10px;
 }
 
 .logo {
-  width: 50px;
-  padding: 10px;
+  width: 40px;
+  padding: 0 10px;
+}
+
+.botao-modo{
+  width: 30px;
+  padding: 0 10px;
 }
 
 .menu ul {
@@ -44,7 +50,7 @@ body {
 
 .menu li a {
   display: block;
-  color: #333;
+  color: #808080;
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
@@ -52,7 +58,6 @@ body {
 }
 
 .menu li a:hover {
-  background-color: #ddd;
   border-radius: 10px;
   color: #333;
 }
@@ -79,7 +84,7 @@ body {
 .container p {
   text-align: center;
   font-size: 1.5em;
-  color: #606060;
+  color: #808080;
 }
 
 .portaChaves {
@@ -92,48 +97,42 @@ body {
 
 .chaves {
   text-align: center;
-  padding: 10px;
+  width: 100px;
 }
 
 .chaves img {
   width: 80px;
 }
 
-.chaves span {
+.texto {
   display: block;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #000;
-}
-
-.chaves span:hover {
-  color: #8f8f8f;
-}
-
-.chaves .texto {
-  transition: color 0.3s ease;
-}
-
-.chaves:hover .texto {
-  animation: iluminarAnimation 1s infinite;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  background-color: #f8f8f8;
   text-align: center;
   padding: 20px;
-  color: #666;
+  color: #808080;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+.texto-negrito {
+  font-weight: bold;
+}
+
+body.modo-escuro {
+  background-color: black;
+  color: #fff;
+}
+
 
 /* Estilos para telas médias */
 @media screen and (max-width: 768px) {
@@ -199,6 +198,10 @@ body {
     width: 30px;
   }
 
+  .modo {
+    width: 15px;
+  }
+
   .menu li a:hover {
     color: #333;
     background-color: transparent;
@@ -220,55 +223,5 @@ body {
 
   .chaves img {
     width: 30px;
-  }
-}
-
-/* Keyframes */
-@keyframes rotateAnimation {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.rotating-image {
-  transition: transform 0.3s ease;
-  transform-style: preserve-3d;
-}
-
-.rotating {
-  animation: rotateAnimation 2s infinite linear;
-}
-
-.flipped {
-  transform: rotateY(180deg);
-}
-
-a.iluminar {
-  text-decoration: none;
-  animation: iluminarAnimation 1s;
-  box-shadow: 0 0 10px #fff;
-}
-
-a.iluminar {
-  text-decoration: none;
-  animation: iluminarAnimation 1s;
-  box-shadow: 0 0 10px #fff;
-}
-
-@keyframes iluminarAnimation {
-  0% {
-    color: #333;
-    text-shadow: none;
-  }
-  50% {
-    color: #cacaca;
-    text-shadow: 0 0 10px #bebebe, 0 0 20px #ffffff;
-  }
-  100% {
-    color: #333;
-    text-shadow: none;
   }
 }

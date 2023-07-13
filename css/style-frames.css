@@ -1,0 +1,23 @@
+/* Keyframes */
+@keyframes rotateAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .rotating-image {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .rotating {
+    animation: rotateAnimation 2s infinite linear;
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  

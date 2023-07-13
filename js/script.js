@@ -32,11 +32,65 @@ function trocarImagem(element, novaImagem) {
     element.src = novaImagem;
 }
 
+function iniciarRotacao(element) {
+  element.classList.add('rotating');
+  element.classList.remove('flipped');
+}
+
+function pararRotacao(element) {
+  element.classList.remove('rotating');
+}
+
+function trocarImagem(element, novaImagem) {
+  element.src = novaImagem;
+}
+
+function iniciarRotacao(element) {
+  element.classList.add('rotating');
+  element.classList.remove('flipped');
+}
+
+function pararRotacao(element) {
+  element.classList.remove('rotating');
+}
+
+function trocarImagem(element, novaImagem) {
+  element.src = novaImagem;
+}
+
+function redirecionarComAtraso(url, atraso) {
+  setTimeout(function() {
+    window.location.href = url;
+  }, atraso);
+}
+
+function negritoTexto(element) {
+  element.style.fontWeight = 'bold';
+}
+
+function removerNegritoTexto(element) {
+  element.style.fontWeight = 'normal';
+}
+
+function girarMaisRapido(element, url) {
+  iniciarRotacao(element);
+  element.style.animationDuration = '0.5s';
+
+  setTimeout(function() {
+    pararRotacao(element);
+    redirecionar(url);
+  }, 2000);
+}
+
 function redirecionar(url) {
   window.location.href = url;
 }
 
-function iluminarTexto(element) {
-    element.classList.add('iluminar');
-}
+let buttonToggle = document.querySelector('.modo-escuro');
+let body = document.body;
 
+buttonToggle.addEventListener('click', function(){
+  body.classList.contains('modo-escuro')
+  ? body.classList.remove('modo-escuro')
+  : body.classList.add('modo-escuro')
+});

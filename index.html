@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-frames.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
@@ -30,9 +31,10 @@
     <title>Sky House</title>
 </head>
 
-<body onload="carregar()">
+<body>
     <header class="header">
         <img class="logo" src="./img/logo_chama-church_100px.png" alt="Chama Church">
+
         <nav class="menu">
             <ul>
                 <li><a href="#">Redes Sociais</a></li>
@@ -40,6 +42,9 @@
                 <li><a href="#">Quem Somos?</a></li>
             </ul>
         </nav>
+        <div class="modo-escuro">
+          <img  class="botao-modo" src="./img/icons8-dia-e-noite-48.png" alt="Modo Noturno">
+        </div>
     </header>
 
     <main class="main">
@@ -50,97 +55,97 @@
         <div class="portaChaves">
           <div class="chaves">
             <img src="./img/chave-white.png" alt="Chave Salvação" class="rotating-image"
-              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-bluelight.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-              onclick="redirecionar('./chave-1-salvacao.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-bluelight.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-1-salvacao.html');">
             <span class="texto">Salvação</span>
           </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Amor" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-2-amor.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-pink.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-2-amor.html');">
               <span class="texto">Amor</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Oração" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-yellow.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-3-oracao.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-yellow.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-3-oracao.html');">
               <span class="texto">Oração</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Liberdade" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-green.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('chave-4-liberdade.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-green.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-4-liberdade.html');">
               <span class="texto">Liberdade</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Provisão" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-red.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-5-provisao.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-red.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-5-provisao.html');">
               <span class="texto">Provisão</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Perdão" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-purple.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-6-perdao.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-purple.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-6-perdao.html');">
               <span class="texto">Perdão</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Comunhão" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-orange.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-7-comunhao.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-orange.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-7-comunhao.html');">
               <span class="texto">Comunhão</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Gratidão" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-blue.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-8-gratidao.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-blue.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-8-gratidao.html');">
               <span class="texto">Gratidão</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Confiança" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-violet.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-9-confianca.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-violet.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-9-confianca.html');">
               <span class="texto">Confiança</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Serviço" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-vino.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-10-servico.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-vino.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-10-servico.html');">
               <span class="texto">Serviço</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Evangelismo" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-grey.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-11-evangelismo.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-gray.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-11-evangelismo.html');">
               <span class="texto">Evangelismo</span>
             </div>
           
             <div class="chaves">
               <img src="./img/chave-white.png" alt="Chave Propósito" class="rotating-image"
-                onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-darkgreen.png'); iluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); desiluminarTexto(this.parentNode.getElementsByClassName('texto')[0]);"
-                onclick="redirecionar('./chave-12-proposito.html');">
+              onmouseover="iniciarRotacao(this); trocarImagem(this, './img/chave-darkgreen.png'); negritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onmouseout="pararRotacao(this); trocarImagem(this, './img/chave-white.png'); removerNegritoTexto(this.parentNode.getElementsByClassName('texto')[0]);"
+              onclick="girarMaisRapido(this, './chave-12-proposito.html');">
               <span class="texto">Propósito</span>
             </div>
           </div>
@@ -155,27 +160,7 @@
 
 </html>
 
-<!--HTML e CSS</br>
--Redes Sociais- (pequena aba com as redes socias)</br>
--Quem somos?-   (direcionamento a igreja se houver, se não tbm um breve texto.)</br>
--Conhecer-      (google maps, mostrando a localização da igreja.)</br>
 
-------------------------------</br>
-Todas as 12 chaves, so clicar</br>
-1-</br>
-2-</br>
-3-</br>
-4-</br>
-5-</br>
-6-</br>
-7-</br>
-8-</br>
-9-</br>
-10-</br>
-11-</br>
-12-</br>
-</br>
-Javascript</br>
-</br>
--O background vai mudar de acordo com a hora de acesso.</br>
--->
+<!-- -Redes Sociais- (pequena aba com as redes socias)</br>
+-Quem somos?-   (direcionamento a igreja se houver, se não tbm um breve texto.)</br>
+-Conhecer-      (google maps, mostrando a localização da igreja.) -->
