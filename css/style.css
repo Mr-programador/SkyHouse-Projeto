@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Open+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+/* Estilos base */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18pt;
@@ -28,10 +29,8 @@ body {
 }
 
 .botao-modo {
-  display: flex;
-  
-  width: 30px;
-  padding: 10px;
+  width: 25px;
+  padding: 0 10px;
 }
 
 .menu ul {
@@ -182,12 +181,12 @@ body.modo-escuro {
   }
 
   .portaChaves {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 
   .chaves img {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -223,24 +222,33 @@ body.modo-escuro {
   }
 
   .portaChaves {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin: 20px;
   }
-}
 
   .chaves img {
-    width: 60%;
+    width: 50%;
   }
 
   .logo {
     width: 40px;
   }
+}
 
-@media screen and (max-width: 414px) {
+/* Estilos para telas extra pequenas */
+@media screen and (max-width: 375px) {
   .portaChaves {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin: 20px;
+    margin: 10px;
+  }
+
+  .chaves img {
+    width: 40%;
+  }
+
+  .logo {
+    width: 30px;
   }
 }
